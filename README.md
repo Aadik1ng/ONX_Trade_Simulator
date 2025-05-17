@@ -22,12 +22,14 @@ A real-time trade simulation and analytics tool for OKX, featuring:
    ```bash
    pip install -r requirements.txt
    ```
-2. Place your API keys in the `api_key` file (see example in repo).\n3. **Train the models (run these from the project root directory):**
+2. Place your API keys in the `api_key` file (see example in repo).
+3. **Train the models (run these from the project root directory):**
    ```bash
    python scripts/train_model.py
    python scripts/train_slippage_model.py
    ```
--3. Run the app:\n+4. Run the app (from the project root directory):\n   ```bash
+4. Run the app (from the project root directory):
+   ```bash
    streamlit run src/trade_simulator/main.py
    ```
 
