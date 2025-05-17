@@ -34,34 +34,36 @@ A real-time trade simulation and analytics tool for OKX, featuring:
    ```
 
 ## File Structure
-- `main.py` — Streamlit UI and orchestration
-- `ws_client.py` — Async WebSocket client
-- `models.py` — Market impact, regression, and fee models
-- `utils.py` — Helpers for latency, config, and logging
-- `requirements.txt` — Python dependencies
-- `README.md` — This file
 
-`src/trade_simulator/` — Contains the main application code:
-  - `__init__.py`
-  - `main.py` — Streamlit UI and orchestration
-  - `ws_client.py` — Async WebSocket client
-  - `models.py` — Market impact, regression, and fee models
-  - `utils.py` — Helpers for latency, config, and logging
-
-`scripts/` — Utility scripts:
-  - `train_model.py` — Script to train the maker/taker model
-  - `train_slippage_model.py` — Script to train the slippage regression model
-
-`models/` — Directory for trained model files:
-  - `maker_taker_classifier.pkl`
-  - `slippage_regressor.pkl`
-
-`docs/` — Project documentation:
-  - `Understanding the Almgren-Chriss Model .md`
-
-`requirements.txt` — Python dependencies
-
-`api_key` — API key file
+```
+Trade_Simulator/
+├── .cursorignore
+├── .gitignore
+├── api_key
+├── docs/
+│   └── Understanding the Almgren-Chriss Model .md
+├── file_descriptions.txt
+├── git_commit_script.py
+├── git_individual_commit_script.py
+├── Local_ignore/ # Ignored by git and cursor
+├── models/
+│   ├── maker_taker_classifier.pkl
+│   └── slippage_regressor.pkl
+├── README.md
+├── requirements.txt
+├── scripts/
+│   ├── train_model.py
+│   └── train_slippage_model.py
+├── src/
+│   └── trade_simulator/
+│       ├── __init__.py
+│       ├── main.py
+│       ├── models.py
+│       ├── utils.py
+│       └── ws_client.py
+├── trade_sim_results/ # Contains simulation output files
+└── TradeAgent/ # Seems unrelated, potentially from a different project/tool
+```
 
 ## Documentation
 - See inline docstrings in each module for model and algorithm details.
@@ -94,4 +96,4 @@ Future work includes:
 -   **Optimization Documentation:** Explanations of implemented optimization techniques (e.g., threading for non-blocking WebSocket, data structure choices, etc.) and their impact.
 
 ## License
-MIT 
+MIT
