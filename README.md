@@ -37,15 +37,9 @@ A real-time trade simulation and analytics tool for OKX, featuring:
 
 ```
 Trade_Simulator/
-├── .cursorignore
-├── .gitignore
 ├── api_key
 ├── docs/
 │   └── Understanding the Almgren-Chriss Model .md
-├── file_descriptions.txt
-├── git_commit_script.py
-├── git_individual_commit_script.py
-├── Local_ignore/ # Ignored by git and cursor
 ├── models/
 │   ├── maker_taker_classifier.pkl
 │   └── slippage_regressor.pkl
