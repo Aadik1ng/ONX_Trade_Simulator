@@ -62,7 +62,6 @@ Trade_Simulator/
 │       ├── utils.py
 │       └── ws_client.py
 ├── trade_sim_results/ # Contains simulation output files
-└── TradeAgent/ # Seems unrelated, potentially from a different project/tool
 ```
 
 ## Documentation
